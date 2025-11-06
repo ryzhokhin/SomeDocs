@@ -12,7 +12,7 @@
 - GitHub account with access to the target repository (maintainer or write)
 - A Space/List in ClickUp dedicated to this project
 
-> **Screenshot to insert:** Workspace → **App Center / Integrations** landing
+![Screenshot 1](https://raw.githubusercontent.com/ryzhokhin/SomeDocs/main/AdminScreenshots/1.png)
 
 ---
 
@@ -24,7 +24,7 @@
 2. In the **Personal** section, click **Connect** and authorize ClickUp in GitHub.
 3. Confirm that your GitHub username appears as **Connected**.
 
-> **Screenshot to insert:** App Center → GitHub → **Personal → Connect**
+![Screenshot 1](https://raw.githubusercontent.com/ryzhokhin/SomeDocs/main/AdminScreenshots/2.png)
 
 ### 2.3 Link repositories to your Workspace/Space
 
@@ -33,7 +33,11 @@
 3. Use the **Space** dropdown to select **which Space** should use each repository.
 4. Click **Save**.
 
-> **Screenshot to insert:** **Add repo** dialog, showing repo list and **Space** dropdown selection
+![Screenshot 1](https://raw.githubusercontent.com/ryzhokhin/SomeDocs/main/AdminScreenshots/3.png)
+![Screenshot 1](https://raw.githubusercontent.com/ryzhokhin/SomeDocs/main/AdminScreenshots/4.png)
+![Screenshot 1](https://raw.githubusercontent.com/ryzhokhin/SomeDocs/main/AdminScreenshots/5.png)
+![Screenshot 1](https://raw.githubusercontent.com/ryzhokhin/SomeDocs/main/AdminScreenshots/6.png)
+
 
 > **Note:** If you’d like a repository to be available only in a specific **List**, you can optionally scope in that List’s settings later. Linking to the Space is sufficient for most teams and ensures the GitHub panel appears in tasks in that Space.
 
@@ -46,7 +50,7 @@
    - If you don’t see it, click the **“+”** at the bottom of the sidebar and add **GitHub**.
 3. If prompted, choose **Connect repository** and select your repo.
 
-> **Screenshot to insert:** Task view with right sidebar showing **GitHub** panel
+![Screenshot 1](https://raw.githubusercontent.com/ryzhokhin/SomeDocs/main/AdminScreenshots/7.png)
 
 > **Troubleshooting:** If the panel still doesn’t appear, re-check that (a) the GitHub ClickApp is ON for this Space and (b) the repo is linked to this Space in App Center.
 
@@ -61,7 +65,7 @@
 3. Assign the task to a **person** and set **priority**/**due date** as needed.
 4. Copy the **Task ID** (format like `CU-xxxxx`) visible near the task title.
 
-> **Screenshot to insert:** New task with **Task ID** highlighted
+![Screenshot 1](https://raw.githubusercontent.com/ryzhokhin/SomeDocs/main/AdminScreenshots/8.png)
 
 ### 4.2 Link the task to GitHub and create an Issue (manual, no automations)
 
@@ -71,7 +75,7 @@
 4. (Optional) Add **Labels** or **Assignee** to the GitHub issue.
 5. Click **Create**.
 
-> **Screenshot to insert:** **New GitHub Issue** modal inside ClickUp task
+![Screenshot 1](https://raw.githubusercontent.com/ryzhokhin/SomeDocs/main/AdminScreenshots/9.png)
 
 > **Best practice:** Include the **ClickUp Task URL** and the **Task ID** in the issue description so devs/agents can reference it and ClickUp can auto-link future commits/PRs.
 
@@ -83,7 +87,7 @@
    - `feature/CU-<taskId>-<short-task-name>` OR `bugfix/CU-<taskId>-<short-task-name>`
 4. Click **Create**.
 
-> **Screenshot to insert:** **New GitHub Branch** modal with base branch dropdown
+
 
 > **Note:** The branch is now created in GitHub and linked to the task. Developers should include the **Task ID** in commits (e.g., `CU-xxxxx`) so ClickUp auto-associates activity.
 
@@ -93,7 +97,7 @@
 - Include `Fixes #<issue-number>` in the PR description to auto-close the GitHub issue upon merge.
 - Include the **ClickUp Task ID** (`CU-xxxxx`) in the PR title or body for robust linking.
 
-> **Screenshot to insert:** **New Pull Request** modal in the task
+
 
 ---
 
@@ -131,7 +135,7 @@ Provide the assignee with:
   - Linked **Commits** (when commit messages include `CU-<taskId>`)
 - Update the ClickUp task **status** as your process requires (manual), or enable Automations later if you want status changes on **PR opened/merged**.
 
-> **Screenshot to insert:** Task GitHub panel showing Issue/PR/Commits
+
 
 ---
 
@@ -148,9 +152,8 @@ Provide the assignee with:
   - Make sure you created it from the task’s **GitHub panel**, or
   - Include the ClickUp **Task ID** (`CU-xxxxx`) in the PR/commit messages; then click **Add GitHub link → Search** to attach existing items
 
-- **PR merged but task didn’t move**
+- **PR merged but task didn't move**
 
-  - If you want automatic status changes, you’ll need **Automations** (optional). Without automations, update status manually.
+  - If you want automatic status changes, you'll need **Automations** (optional). Without automations, update status manually.
 
-##
-
+---

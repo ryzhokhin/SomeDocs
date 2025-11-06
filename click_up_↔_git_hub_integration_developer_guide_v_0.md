@@ -12,7 +12,7 @@
 - GitHub **write** access to the target repository
 - Local checkout of the project (or open in **Cursor** / your preferred IDE)
 
-> **Screenshot to insert:** Task board with an assigned task highlighted
+![Screenshot 1](https://raw.githubusercontent.com/ryzhokhin/SomeDocs/main/DeveloperScreenshots/1.png)
 
 ---
 
@@ -21,7 +21,7 @@
 1. Open the task you’re going to work on.
 2. Note the **Task ID** (format like `CU-xxxxxx`) shown near the task title.
 
-> **Screenshot to insert:** Task view with **Task ID** location highlighted
+![Screenshot 2](https://raw.githubusercontent.com/ryzhokhin/SomeDocs/main/DeveloperScreenshots/2.png)
 
 ---
 
@@ -31,7 +31,7 @@
 2. In the GitHub panel, locate the **linked GitHub Issue** for this task and make sure its status is **Open**.
 3. Click **Copy link** (the Issue URL) — you’ll paste it into your IDE/AI tooling.
 
-> **Screenshots to insert:**
+>![Screenshot 3](https://raw.githubusercontent.com/ryzhokhin/SomeDocs/main/DeveloperScreenshots/3.png)
 >
 > - Where to click the **GitHub** icon in the task
 > - GitHub panel showing the **Open** Issue
@@ -73,7 +73,7 @@ Project location: [put the project location if needed]
 3. Include the ClickUp **Task ID** (`CU-xxxxxx`) in the PR body or title for extra linkage.
 4. Submit the PR for review.
 
-> **Screenshot to insert:** PR creation screen with `Closes #N` and `CU-xxxxx` highlighted
+![Screenshot 4](https://raw.githubusercontent.com/ryzhokhin/SomeDocs/main/DeveloperScreenshots/4.png)
 
 ---
 
@@ -82,7 +82,9 @@ Project location: [put the project location if needed]
 - When the PR is **merged**, GitHub will **close the Issue** automatically (thanks to `Closes #N`).
 - In ClickUp, the task’s GitHub panel will reflect the PR as **Merged** and the Issue as **Closed**. If your team uses automations, the task status may update automatically; otherwise, update it manually.
 
-> **Screenshot to insert:** Task view showing PR = Merged, Issue = Closed
+![Screenshot 5](https://raw.githubusercontent.com/ryzhokhin/SomeDocs/main/DeveloperScreenshots/5.png)
+![Screenshot 6](https://raw.githubusercontent.com/ryzhokhin/SomeDocs/main/DeveloperScreenshots/6.png)
+![Screenshot 7](https://raw.githubusercontent.com/ryzhokhin/SomeDocs/main/DeveloperScreenshots/7.png)
 
 ---
 
@@ -96,13 +98,7 @@ Project location: [put the project location if needed]
 
 ---
 
-## 8) Quick checklist (developer)
-
--
-
----
-
-## 9) Troubleshooting
+## 8) Troubleshooting
 
 - **I don’t see the GitHub panel:** Ask an admin to ensure the repo is linked to this Space (App Center → GitHub → Workspace → Settings → Add repo → map to Space).
 - **PR merged but task didn’t move:** Add automations later, or move the task manually.
@@ -110,7 +106,7 @@ Project location: [put the project location if needed]
 
 ---
 
-## 10) Appendix: CLI snippets (optional)
+## 9) Appendix: CLI snippets (optional)
 
 ```bash
 # Create and push a branch if missing
@@ -121,4 +117,6 @@ BR="feature/CU-<taskId>-<slug>" && \
 # Example commit with ClickUp Task ID
 git add -A && git commit -m "feat: document session queue (CU-3k5yq6)" && git push
 ```
+
+---
 
